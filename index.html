@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="logo.svg" />
   <link rel="stylesheet" href="styles.css" />
   <script>
     try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
@@ -18,7 +19,14 @@
   <div class="progress" id="progress"></div>
   <header class="nav">
     <div class="container nav-inner">
-      <a href="#top" class="logo">deepak<span>.</span></a>
+      <a href="#top" class="logo" aria-label="Deepak Phaneendra, back to top">
+        <svg class="logo-mark" viewBox="0 0 64 64" width="30" height="30" aria-hidden="true">
+          <defs><linearGradient id="dpgNav" x1="12" y1="12" x2="52" y2="52" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="var(--accent)"/><stop offset="1" stop-color="var(--accent-2)"/></linearGradient></defs>
+          <g fill="none" stroke="url(#dpgNav)" stroke-width="5.5" stroke-linecap="round"><circle cx="32" cy="32" r="10"/><path d="M42 15v17M22 32v17"/></g>
+          <circle cx="42" cy="13" r="4" fill="var(--accent-2)"/><circle cx="22" cy="51" r="4" fill="var(--accent)"/>
+        </svg>
+        deepak<span>.</span>
+      </a>
       <nav class="nav-links" id="navLinks">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
@@ -46,7 +54,6 @@
       <div class="container">
         <div class="hero-grid">
         <div class="hero-text">
-        <p class="eyebrow reveal"><span class="dot"></span> SDE 1 @ GYTworkz · Hyderabad, India</p>
         <h1 class="reveal">Hi, I'm <span class="grad">Deepak Phaneendra</span>.<br /><span class="typed-line"><span class="typed-ghost" id="typedGhost" aria-hidden="true">I build AI agents that do real work.</span><span class="typed-live">I build <span class="typed" id="typed">AI agents that do real work.</span><span class="caret" aria-hidden="true"></span></span></span></h1>
         <p class="lead reveal">
           Software engineer specialising in <strong>agentic AI backends</strong>: multi-agent LLM systems, RAG and text-to-SQL,

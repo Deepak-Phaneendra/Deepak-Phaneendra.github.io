@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Deepak Phaneendra logo">
+  <defs>
+    <linearGradient id="dpg" x1="12" y1="12" x2="52" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7c8cff"/>
+      <stop offset="1" stop-color="#3ee6c1"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0b0d12"/>
+  <g fill="none" stroke="url(#dpg)" stroke-width="5.5" stroke-linecap="round">
+    <circle cx="32" cy="32" r="10"/>
+    <path d="M42 15v17M22 32v17"/>
+  </g>
+  <circle cx="42" cy="13" r="4" fill="#3ee6c1"/>
+  <circle cx="22" cy="51" r="4" fill="#7c8cff"/>
+</svg>
