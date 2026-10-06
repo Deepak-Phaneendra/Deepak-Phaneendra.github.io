@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deepak Phaneendra — Agentic AI Engineer</title>
+  <meta name="description" content="Yadavalli Sri Deepak Phaneendra — Software Development Engineer building agentic AI systems, LLM backends, computer vision and robotics solutions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <!-- ============ NAV ============ -->
+  <div class="progress" id="progress"></div>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo">deepak<span>.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">
+          <svg class="sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <canvas id="neural" aria-hidden="true"></canvas>
+      <div class="container">
+        <div class="hero-grid">
+        <div class="hero-text">
+        <p class="eyebrow reveal"><span class="dot"></span> SDE 1 @ GYTworkz · Hyderabad, India</p>
+        <h1 class="reveal">Hi, I'm <span class="grad">Deepak Phaneendra</span>.<br /><span class="typed-line"><span class="typed-ghost" id="typedGhost" aria-hidden="true">I build AI agents that do real work.</span><span class="typed-live">I build <span class="typed" id="typed">AI agents that do real work.</span><span class="caret" aria-hidden="true"></span></span></span></h1>
+        <p class="lead reveal">
+          Software engineer specialising in <strong>agentic AI backends</strong>: multi-agent LLM systems, RAG and text-to-SQL,
+          plus <strong>computer vision</strong> and <strong>robotics</strong>. I turn manual, error-prone processes into
+          autonomous systems.
+        </p>
+        <div class="cta reveal">
+          <a href="https://drive.google.com/file/d/1N6C7U171x-upqeH75ng8N8h4W9aSqL5V/view?usp=sharing" class="btn btn-primary" target="_blank" rel="noopener">Grab my résumé ↗</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+        </div>
+        <figure class="hero-photo reveal">
+          <img src="image.jpeg" alt="Deepak Phaneendra with a quadruped robot" width="800" height="800" />
+          <figcaption><span class="dot"></span> Robotics · Agentic AI</figcaption>
+        </figure>
+        </div>
+        <div class="stats reveal">
+          <div><span class="num">2.5+</span><span class="label">years building AI systems</span></div>
+          <div><span class="num">3</span><span class="label">IEEE / Elsevier publications</span></div>
+          <div><span class="num">8+</span><span class="label">AI &amp; ML projects shipped</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <div class="container about">
+        <div class="section-head reveal">
+          <span class="kicker">01 — About</span>
+          <h2>From research papers to production agents</h2>
+        </div>
+        <div class="about-body reveal">
+          <p>
+            I'm a Computer Science graduate from VR Siddhartha Engineering College. I started out
+            publishing research on Software-Defined Networking, then spent two years at <strong>Accenture</strong> building AI for
+            industrial settings. That included multi-agent inspection workflows, reinforcement learning for robot arms, and
+            real-time drone vision on NVIDIA DeepStream.
+          </p>
+          <p>
+            Today at <strong>GYTworkz</strong> I build backend systems for agentic AI products. I design LangGraph agents, text-to-SQL
+            copilots, speech pipelines and organisation-wide knowledge systems that turn meetings, chats and emails into
+            insights and action items.
+          </p>
+          <p>
+            I care about systems that are <em>observable, reliable and useful</em>, not just impressive in a demo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">02 — Skills</span>
+          <h2>Toolbox</h2>
+        </div>
+        <div class="skills">
+          <div class="skill-group reveal" style="--g:#7c8cff">
+            <div class="group-head"><span class="group-ico"><svg class="lucide" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2z"/><path d="M19 3v4M21 5h-4"/></svg></span><h4>Agentic AI &amp; LLMs</h4><span class="count">11</span></div>
+            <div class="skill-grid">
+              <div class="skill" style="--c:#7FC8FF"><span class="ico"><img src="icons/langgraph.svg" alt="LangGraph logo" loading="lazy" /></span><span class="name">LangGraph</span></div>
+              <div class="skill" style="--c:#4AA8FF"><span class="ico"><img class="av" src="icons/microsoft.png" alt="Microsoft AutoGen logo" loading="lazy" /></span><span class="name">Microsoft AutoGen</span></div>
+              <div class="skill" style="--c:#a78bfa"><span class="ico"><svg class="lucide" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span class="name">Multi-Agent Systems</span></div>
+              <div class="skill" style="--c:#3ee6c1"><span class="ico"><svg class="lucide" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span><span class="name">RAG</span></div>
+              <div class="skill" style="--c:#f59e0b"><span class="ico"><svg class="lucide" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg></span><span class="name">Text-to-SQL</span></div>
+              <div class="skill" style="--c:#30A2FF"><span class="ico"><img class="av" src="icons/vllm.png" alt="vLLM logo" loading="lazy" /></span><span class="name">vLLM</span></div>
+              <div class="skill" style="--c:#22d3ee"><span class="ico"><span class="emoji">🚅</span></span><span class="name">LiteLLM</span></div>
+              <div class="skill" style="--c:#f472b6"><span class="ico"><img class="av" src="icons/langfuse.png" alt="Langfuse logo" loading="lazy" /></span><span class="name">Langfuse</span></div>
+              <div class="skill" style="--c:#DC244C"><span class="ico"><img src="icons/qdrant.svg" alt="Qdrant logo" loading="lazy" /></span><span class="name">Qdrant</span></div>
+              <div class="skill" style="--c:#10b981"><span class="ico"><img class="av" src="icons/openai.png" alt="Whisper logo" loading="lazy" /></span><span class="name">Whisper</span></div>
+              <div class="skill" style="--c:#3b9cff"><span class="ico"><img src="icons/azure.svg" alt="Azure OpenAI logo" loading="lazy" /></span><span class="name">Azure OpenAI</span></div>
+            </div>
+          </div>
+          <div class="skill-group reveal" style="--g:#3ee6c1">
+            <div class="group-head"><span class="group-ico"><svg class="lucide" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="8" rx="2"/><rect x="2" y="13" width="20" height="8" rx="2"/><path d="M6 7h.01M6 17h.01"/></svg></span><h4>Backend &amp; Infra</h4><span class="count">12</span></div>
+            <div class="skill-grid">
+              <div class="skill" style="--c:#009688"><span class="ico"><img src="icons/fastapi.svg" alt="FastAPI logo" loading="lazy" /></span><span class="name">FastAPI</span></div>
+              <div class="skill" style="--c:#4169E1"><span class="ico"><img src="icons/postgresql.svg" alt="PostgreSQL logo" loading="lazy" /></span><span class="name">PostgreSQL</span></div>
+              <div class="skill" style="--c:#D71F00"><span class="ico"><img class="av" src="icons/sqlalchemy.svg" alt="SQLAlchemy logo" loading="lazy" /></span><span class="name">SQLAlchemy</span></div>
+              <div class="skill" style="--c:#fb923c"><span class="ico"><svg class="lucide" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M6 21V9a9 9 0 0 0 9 9"/></svg></span><span class="name">Alembic</span></div>
+              <div class="skill" style="--c:#FF4438"><span class="ico"><img src="icons/redis.svg" alt="Redis / Valkey logo" loading="lazy" /></span><span class="name">Redis / Valkey</span></div>
+              <div class="skill" style="--c:#9aa3b2"><span class="ico"><img class="dark" src="icons/kafka.svg" alt="Apache Kafka logo" loading="lazy" /></span><span class="name">Apache Kafka</span></div>
+              <div class="skill" style="--c:#C72E49"><span class="ico"><img src="icons/minio.svg" alt="MinIO logo" loading="lazy" /></span><span class="name">MinIO</span></div>
+              <div class="skill" style="--c:#E92063"><span class="ico"><img src="icons/pydantic.svg" alt="Pydantic logo" loading="lazy" /></span><span class="name">Pydantic</span></div>
+              <div class="skill" style="--c:#FB015B"><span class="ico"><img class="dark" src="icons/jwt.svg" alt="JWT Auth logo" loading="lazy" /></span><span class="name">JWT Auth</span></div>
+              <div class="skill" style="--c:#2496ED"><span class="ico"><img src="icons/docker.svg" alt="Docker logo" loading="lazy" /></span><span class="name">Docker</span></div>
+              <div class="skill" style="--c:#0A9EDC"><span class="ico"><img src="icons/pytest.svg" alt="pytest logo" loading="lazy" /></span><span class="name">pytest</span></div>
+              <div class="skill" style="--c:#61DAFB"><span class="ico"><img src="icons/react.svg" alt="React logo" loading="lazy" /></span><span class="name">React</span></div>
+            </div>
+          </div>
+          <div class="skill-group reveal" style="--g:#f59e0b">
+            <div class="group-head"><span class="group-ico"><svg class="lucide" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span><h4>Vision &amp; Robotics</h4><span class="count">8</span></div>
+            <div class="skill-grid">
+              <div class="skill" style="--c:#9aa3b2"><span class="ico"><img class="av" src="icons/ultralytics.png" alt="YOLO logo" loading="lazy" /></span><span class="name">YOLO</span></div>
+              <div class="skill" style="--c:#38bdf8"><span class="ico"><svg class="lucide" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5M12 22V12"/></svg></span><span class="name">PointPillars</span></div>
+              <div class="skill" style="--c:#76B900"><span class="ico"><img src="icons/nvidia.svg" alt="NVIDIA DeepStream logo" loading="lazy" /></span><span class="name">NVIDIA DeepStream</span></div>
+              <div class="skill" style="--c:#76B900"><span class="ico"><img src="icons/nvidia.svg" alt="Isaac Sim logo" loading="lazy" /></span><span class="name">Isaac Sim</span></div>
+              <div class="skill" style="--c:#76B900"><span class="ico"><img src="icons/nvidia.svg" alt="Isaac Lab logo" loading="lazy" /></span><span class="name">Isaac Lab</span></div>
+              <div class="skill" style="--c:#9aa3b2"><span class="ico"><img class="dark" src="icons/ros.svg" alt="ROS2 logo" loading="lazy" /></span><span class="name">ROS2</span></div>
+              <div class="skill" style="--c:#f472b6"><span class="ico"><svg class="lucide" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></svg></span><span class="name">Reinforcement Learning</span></div>
+              <div class="skill" style="--c:#e5e7eb"><span class="ico"><svg class="lucide" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4M8 16h.01M16 16h.01"/></svg></span><span class="name">Franka Emika Panda</span></div>
+            </div>
+          </div>
+          <div class="skill-group reveal" style="--g:#f472b6">
+            <div class="group-head"><span class="group-ico"><svg class="lucide" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg></span><h4>Languages &amp; Tools</h4><span class="count">8</span></div>
+            <div class="skill-grid">
+              <div class="skill" style="--c:#3776AB"><span class="ico"><img src="icons/python.svg" alt="Python logo" loading="lazy" /></span><span class="name">Python</span></div>
+              <div class="skill" style="--c:#ED8B00"><span class="ico"><img src="icons/java.svg" alt="Java logo" loading="lazy" /></span><span class="name">Java</span></div>
+              <div class="skill" style="--c:#A8B9CC"><span class="ico"><img src="icons/c.svg" alt="C logo" loading="lazy" /></span><span class="name">C</span></div>
+              <div class="skill" style="--c:#4479A1"><span class="ico"><svg class="lucide" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg></span><span class="name">SQL</span></div>
+              <div class="skill" style="--c:#DC322F"><span class="ico"><img src="icons/scala.svg" alt="Scala logo" loading="lazy" /></span><span class="name">Scala</span></div>
+              <div class="skill" style="--c:#E34F26"><span class="ico"><img src="icons/html5.svg" alt="HTML5 logo" loading="lazy" /></span><span class="name">HTML5</span></div>
+              <div class="skill" style="--c:#663399"><span class="ico"><img src="icons/css3.svg" alt="CSS logo" loading="lazy" /></span><span class="name">CSS3</span></div>
+              <div class="skill" style="--c:#3DDC84"><span class="ico"><img src="icons/androidstudio.svg" alt="Android Studio logo" loading="lazy" /></span><span class="name">Android Studio</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-grid">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">03 — Experience</span>
+          <h2>Where I've worked</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="job reveal">
+            <div class="job-meta">
+              <span class="date">May 2026 — Present</span>
+              <span class="place">Hyderabad</span>
+            </div>
+            <div class="job-body">
+              <h3>Software Development Engineer 1 <span class="at">@ GYTworkz</span></h3>
+              <p>Backend engineer for agentic AI products, covering agent orchestration, LLM tooling, data pipelines and observability.</p>
+              <ul>
+                <li>Built the backend for <strong>HireReady</strong>, an AI interview-prep platform. It tailors resumes to job descriptions for ATS scoring, analyses gaps against the job and gives company insights. It also includes a LangGraph copilot that can navigate the app, query data with text-to-SQL and take actions for the user.</li>
+                <li>Built <strong>Enterprise Brain</strong>, an organisation-wide intelligence layer. It ingests Teams meetings, emails, WhatsApp and ClickUp to show leadership what's happening across every project, and it keeps a task registry up to date automatically.</li>
+                <li>Shipped self-hosted LLM infrastructure, serving local models with <strong>vLLM</strong> behind a LiteLLM gateway (Qwen3, BGE-M3, Whisper), and set up tracing with Langfuse.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="job reveal">
+            <div class="job-meta">
+              <span class="date">Sep 2024 — May 2026</span>
+              <span class="place">Bengaluru</span>
+            </div>
+            <div class="job-body">
+              <h3>Software Development Engineer <span class="at">@ Accenture</span></h3>
+              <p>Built applied AI, computer vision and robotics solutions for industrial clients.</p>
+              <ul>
+                <li>Led an <strong>agentic AI gauge-inspection system</strong> on Microsoft AutoGen. It used multiple autonomous agents to understand SOPs, generate reports, retrieve past readings and talk to the backend.</li>
+                <li>Developed <strong>RL-powered robot manipulation</strong> for automated screw-tightening on a Franka Emika Panda arm with ROS2.</li>
+                <li>Built <strong>RoboBrain</strong>, a drone-based parking inspection system. It runs a custom YOLO model on NVIDIA DeepStream with <strong>~235% faster inference</strong>.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="job reveal">
+            <div class="job-meta">
+              <span class="date">Feb 2024 — Jun 2024</span>
+              <span class="place">Bengaluru</span>
+            </div>
+            <div class="job-body">
+              <h3>Software Development Intern <span class="at">@ Accenture</span></h3>
+              <ul>
+                <li>Built a <strong>3D Object Inspector</strong> that finds structural anomalies in aircraft wiring. It compares scanned point clouds against reference models using a PointPillars model trained on a custom-labelled dataset.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">04 — Projects</span>
+          <h2>Selected work</h2>
+        </div>
+
+        <div class="filters reveal" role="tablist">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="agents">Agentic AI</button>
+          <button class="chip" data-filter="vision">Vision &amp; Robotics</button>
+          <button class="chip" data-filter="research">Research &amp; Other</button>
+        </div>
+
+        <div class="grid">
+          <!-- HireReady -->
+          <article class="card featured reveal" data-cat="agents">
+            <div class="card-top">
+              <span class="badge">GYTworkz · Featured</span>
+              <h3>HireReady: AI Interview Prep Copilot</h3>
+            </div>
+            <p>
+              Candidates paste a job description or job URL, and the platform gets them ready for the interview from start to finish.
+            </p>
+            <ul class="features">
+              <li>Tailors the resume to the job description for a higher <strong>ATS score</strong></li>
+              <li>Researches the company and shows <strong>skill gaps</strong> between the profile and the job</li>
+              <li>Includes an <strong>agentic copilot</strong> that navigates the app, answers questions from the database with <strong>text-to-SQL</strong> and takes actions in the app</li>
+              <li>Listens to live interviews with <strong>Whisper</strong> and gives a detailed performance analysis</li>
+            </ul>
+            <div class="tags">
+              <span>LangGraph</span><span>FastAPI</span><span>Python</span><span>PostgreSQL</span><span>Redis</span><span>Whisper</span><span>Langfuse</span><span>React</span><span>Docker</span>
+            </div>
+          </article>
+
+          <!-- Enterprise Brain -->
+          <article class="card featured reveal" data-cat="agents">
+            <div class="card-top">
+              <span class="badge">GYTworkz · Featured</span>
+              <h3>Enterprise Brain: Organisational Intelligence</h3>
+            </div>
+            <p>
+              A central "brain" for the company. It reads meetings, group chats, emails and WhatsApp, and gives the CEO a live
+              dashboard of what's happening in every project and what each person is working on.
+            </p>
+            <ul class="features">
+              <li>Ingests <strong>Teams meetings, transcripts, Outlook mail, WhatsApp and ClickUp</strong> through Microsoft Graph and Kafka pipelines</li>
+              <li>Keeps an <strong>automatic task registry</strong>: tasks mentioned in meetings are created with the right owner, and existing tasks update as discussions move on</li>
+              <li>Uses <strong>RAG</strong> over Qdrant with BGE-M3 embeddings, OCR for attachments and a classifier that routes emails to projects</li>
+              <li>Runs fully on-prem: <strong>Qwen3 served with vLLM</strong> behind a LiteLLM gateway, with Langfuse tracing</li>
+            </ul>
+            <div class="tags">
+              <span>FastAPI</span><span>PostgreSQL</span><span>Kafka</span><span>Qdrant</span><span>Valkey</span><span>MinIO</span><span>vLLM</span><span>LiteLLM</span><span>Qwen3</span><span>BGE-M3</span><span>Whisper</span><span>MS Graph</span><span>Langfuse</span>
+            </div>
+          </article>
+
+          <!-- Gauge -->
+          <article class="card featured reveal" data-cat="agents">
+            <div class="card-top">
+              <span class="badge">Accenture</span>
+              <h3>Autonomous Gauge Inspection &amp; Report Generation</h3>
+            </div>
+            <p>
+              I led the development of an agentic AI system that handles gauge inspection and reporting from start to finish
+              with minimal human input. It replaced a manual, error-prone process.
+            </p>
+            <ul class="features">
+              <li>Multi-agent workflow built on <strong>Microsoft AutoGen</strong></li>
+              <li>Dedicated agents for <strong>SOP understanding</strong>, <strong>report generation</strong> and <strong>retrieving past readings</strong></li>
+              <li>A <strong>backend communication agent</strong> that connects to the dashboard to store and retrieve gauge readings securely</li>
+              <li>Built with the frontend team (<strong>chatbot UI and dashboard</strong>) and the data-pipeline team to deliver <strong>SOP-compliant</strong> inspections</li>
+            </ul>
+            <div class="tags"><span>Microsoft AutoGen</span><span>Python</span><span>Multi-Agent</span><span>LLMs</span></div>
+          </article>
+
+          <!-- RL -->
+          <article class="card featured reveal" data-cat="vision">
+            <div class="card-top">
+              <span class="badge">Accenture</span>
+              <h3>RL-Powered Robot Manipulation</h3>
+            </div>
+            <p>
+              A reinforcement-learning system that teaches a robot arm to tighten screws on an automobile assembly line, replacing
+              a manual process that was prone to mistakes.
+            </p>
+            <ul class="features">
+              <li>Trains a policy to <strong>grasp an Allen key and tighten screws</strong> on its own</li>
+              <li>Built for deployment on a <strong>Franka Emika Panda</strong> robot arm</li>
+              <li>Uses <strong>ROS2</strong> to connect to and control the robot</li>
+              <li>Aims to <strong>reduce anomalies</strong> and make the task more consistent and efficient</li>
+            </ul>
+            <div class="tags"><span>Reinforcement Learning</span><span>ROS2</span><span>Isaac Sim</span><span>Isaac Lab</span><span>Franka Panda</span></div>
+          </article>
+
+          <!-- RoboBrain -->
+          <article class="card featured reveal" data-cat="vision">
+            <div class="card-top">
+              <span class="badge">Accenture</span>
+              <h3>RoboBrain: Drone Parking Inspection</h3>
+            </div>
+            <p>
+              An autonomous drone system that inspects parking lots, counting vehicles and finding empty slots in real time.
+            </p>
+            <ul class="features">
+              <li>Trained a custom <strong>YOLO</strong> model on a dataset I labelled for this project</li>
+              <li>Counts <strong>vehicles</strong> and finds <strong>empty slots</strong> from drone footage</li>
+              <li>Optimised and deployed on <strong>NVIDIA DeepStream</strong> for GPU-accelerated real-time inference</li>
+              <li>Made inference about <strong>235% faster</strong></li>
+            </ul>
+            <div class="metric">~235% <span>inference speed-up</span></div>
+            <div class="tags"><span>YOLO</span><span>NVIDIA DeepStream</span><span>Computer Vision</span><span>Python</span></div>
+          </article>
+
+          <!-- 3D -->
+          <article class="card featured reveal" data-cat="vision">
+            <div class="card-top">
+              <span class="badge">Accenture · Internship</span>
+              <h3>3D Object Inspector</h3>
+            </div>
+            <p>
+              An inspection system that finds structural anomalies in aircraft wiring by comparing new 3D scans with the original models.
+            </p>
+            <ul class="features">
+              <li>Compares newly scanned <strong>point clouds</strong> with the original reference models</li>
+              <li>Extracted and labelled a <strong>custom point-cloud dataset</strong></li>
+              <li>Trained a <strong>PointPillars</strong> model for accurate 3D object recognition</li>
+              <li>Automated anomaly detection, making inspection <strong>faster and more reliable</strong></li>
+            </ul>
+            <div class="tags"><span>PointPillars</span><span>Point Clouds</span><span>3D Detection</span><span>Python</span></div>
+          </article>
+
+          <!-- SDN -->
+          <article class="card featured reveal" data-cat="research">
+            <div class="card-top">
+              <span class="badge">Research</span>
+              <h3>Enhanced Controller Placement in SDN</h3>
+            </div>
+            <p>
+              A new controller-placement approach for Software-Defined Networks that lowers both average and worst-case network latency.
+            </p>
+            <ul class="features">
+              <li>Optimises where controllers are placed to reduce <strong>average and worst-case latency</strong></li>
+              <li>In simulation, it beat traditional methods: <strong>27% lower average latency</strong></li>
+              <li>And <strong>35% lower worst-case latency</strong></li>
+              <li>Related research was published in <strong>IEEE Xplore and Elsevier</strong> (see Publications)</li>
+            </ul>
+            <div class="metric">−27% <span>avg latency</span> &nbsp;·&nbsp; −35% <span>worst-case</span></div>
+            <div class="tags"><span>SDN</span><span>Networking</span><span>Optimisation</span><span>Simulation</span></div>
+          </article>
+
+          <!-- Medi -->
+          <article class="card featured reveal" data-cat="research">
+            <div class="card-top">
+              <span class="badge">Personal</span>
+              <h3>Medi Reminder</h3>
+            </div>
+            <p>
+              An Android app that helps people take their medicines on time.
+            </p>
+            <ul class="features">
+              <li><strong>Schedule</strong> medicines with timely reminder notifications</li>
+              <li><strong>Track</strong> which medicines have been taken</li>
+              <li>A simple, <strong>user-friendly interface</strong> that's easy to navigate</li>
+              <li>Built natively with <strong>Java and XML</strong> in Android Studio</li>
+            </ul>
+            <div class="tags"><span>Java</span><span>XML</span><span>Android Studio</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESEARCH ============ -->
+    <section id="research" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">05 — Research</span>
+          <h2>Publications</h2>
+        </div>
+        <ol class="pubs">
+          <li class="reveal">
+            <span class="year">2024</span>
+            <div><h4>Controller Placement in SDN: Evaluation of Link Failure-Tolerant Approaches</h4><span class="venue">IEEE Xplore</span></div>
+          </li>
+          <li class="reveal">
+            <span class="year">2024</span>
+            <div><h4>Effective Deployment of Controllers in Software-Defined Networks</h4><span class="venue">Elsevier</span></div>
+          </li>
+          <li class="reveal">
+            <span class="year">2023</span>
+            <div><h4>A Study on Multi-Controller Placement in Software-Defined Networks (SDN)</h4><span class="venue">IEEE Xplore</span></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section contact">
+      <div class="container reveal">
+        <span class="kicker">06 — Contact</span>
+        <h2>Let's build something intelligent.</h2>
+        <p class="lead">Open to conversations about agentic AI, LLM systems and interesting engineering problems.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="mailto:deepakphaneendra1729@gmail.com">deepakphaneendra1729@gmail.com</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/sri-deepak-phaneendra-yadavalli/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© <span id="year"></span> Yadavalli Sri Deepak Phaneendra</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
